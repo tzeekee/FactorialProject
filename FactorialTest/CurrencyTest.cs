@@ -13,7 +13,7 @@ namespace FactorialTest
         {
             Mock<RateRetriever> r = new Mock<RateRetriever>();
 
-            r.Setup(x => x.GetCurrentRateFromYahooFinance("USD", "SGD")).Returns(1.3);
+            r.Setup(x => x.GetCurrentRateFromYahooFinance("USD", "SGD")).Returns(1.5);
 
             CurrencyConverter c = new CurrencyConverter(r.Object);
 
